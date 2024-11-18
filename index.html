@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Creation</title>
+    <style>
+        #t1, #r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8, #th1, #th2, #td1, #td2, #td3, #td4, #td5, #td6, #td7, #td8, #td9, #td10, #td11, #td12, #td13, #td14, #td15, #td16, #td17, #td18, #td19, #td20, #td21, #td22, #td23, #td24, #td25, #td26, #td27, #td28, #td29, #td30, #td31, #td32, #td33, #td34, #td35, #td36, #td37, #td38, #td39, #td40, #td41
+        {border: 2px solid rgb(255, 0, 0); border-collapse: collapse;}
+    </style>
+    <style>
+        #r2 {
+            background-color: aqua;
+        }
+        #r4, #r6, #r8 {
+            background-color: chartreuse;
+        }
+        #thh1, #thh2, #thh3, #thh4, #thh5, #thh6, #thh7, #thh8, #thh9, #thh10, #thh11
+        {
+            border: 2px solid; border-collapse: collapse; background-color: red;
+        }
+        #td42, #td43, #td44, #td45, #td46, #td47, #td48, #td49, #td50, #td51, #td52, #td53, #td54, #td55, #td56, #td57, #td58, #td59, #td60, #td61, #td62, #td63, #td64, #td65, #td66, #td67, #td68, #td69, #td70, #td71, #td72, #td73, #td74, #td75, #td76, #td77, #td78, #td79, #td80, #td81, #td82, #td83, #td84, #td85, #td86, #td87, #td88, #td89, #td90, #td91, #td92, #td93, #td94, #td95, #td96, #td97, #td98, #td99, #td100, #td101, #td102, #td103, #td104, #td105, #td106, #td107, #td108, #td109, #td110, #td111, #td112, #td113, #td114, #td115, #td116, #td117, #td118, #td119, #td120, #td121, #td122, #td123, #td124, #td125, #td126, #td127, #td128, #td129, #td130, #td131, #td132, #td133, #td134, #td135, #td136, #td137, #td138, #td139, #td140, #td141, #td142, #td143, #td144, #td145, #td146, #td147, #td148, #td149, #td150, #td151, #td152, #td153, #td154, #td155, #td156, #td157, #td158, #td159, #td160, #td161, #td162, #td163, #td164, #td165, #td166, #td167, #td168, #td169, #td170, #td171, #td172, #td173, #td174, #td175, #td176, #td177, #td178, #td179, #td180, #td181, #td182, #td183, #td184, #td185, #td186, #td187, #td188, #td189, #td190, #td191, #td192, #td193, #td194, #td195, #td196, #td197, #td198, #td199, #td200, #td201, #td202, #td203, #td204, #td205, #td206
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #tr1, #tr2, #tr3, #tr4, #tr5, #tr6, #tr7, #tr8, #tr9, #tr10, #tr11, #tr12, #tr13, #tr14, #tr15, #tr16
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #t2{
+            border: 2px solid; border-collapse: collapse; background-color: cadetblue;
+        }
+        #tr2, #tr4, #tr6, #tr8, #tr10, #tr12, #tr14, #tr16
+        {background-color: yellow;}
+        #he1, #he2, #he3, #he4, #he5 
+        {
+            border: 2px solid; border-collapse: collapse; background-color: aqua;
+        }
+        #td207, #td208, #td209, #td210, #td211, #td212, #td213, #td214, #td215, #td216, #td217, #td218, #td219, #td220, #td221, #td222, #td223, #td224, #td225, #td226
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #row1, #row2, #row3, #row4, #row5
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #hh1, #hh2, #hh3
+        {
+            border: 2px solid; border-collapse: collapse; background-color: coral;
+        }
+        #trr1, #trr2, #trr3, #trr4
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #tt1
+        {
+            border-collapse: collapse;
+        }
+        #ro1, #ro2, #ro3, #ro4, #ro5, #ro6
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #data1, #data2, #data3, #data4, #data5, #data6, #data7, #data8, #data9, #data10, #data11, #data12, #data13, #data14, #data15
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #hed1, #hed2, #hed3
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #tab1
+        {
+            border: 2px solid; border-collapse: collapse;
+        }
+        #hed1, #data1, #data4, #data7, #data10, #data13
+        {
+            background-color: coral;
+        }
+        #hed2, #data2, #data5, #data8, #data11, #data14
+        {
+            background-color: aqua;
+        }
+        #hed3, #data3, #data6, #data9, #data12, #data15
+        {
+            background-color: blueviolet;
+        }
+        #hed4
+        {
+            background-color: yellow;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <!-- Table- 01 -->
+            <div>
+           <center> 
+            <h1 style="color: red;"><u>Table-01</u></h1>
+            <h2><u>Salt Concentration & Light Transmittance</u></h2>
+        </center>
+    </div>
+        </nav>
+    </header>
+    <!-- main -->
+     <main>
+        <section>
+            <div>
+            <center>
+            <table id="t1">
+                <tr id="r1">
+                    <th rowspan="2" id="th1">Salt Concentration (%)
+                    </th>
+                    <th colspan="5" id="th2">Transmittance (%)</th>
+                </tr>
+                <tr id="r2">
+                    <td id="td1">Trial #1</td>
+                    <td id="td2">Trial #2</td>
+                    <td id="td3">Trial #3</td>
+                    <td id="td4">Trial #4</td>
+                    <td id="td5">Trial #5</td>
+                </tr>  
+                <tr id="r3">
+                    <td id="td6">0</td>
+                    <td id="td7">77.23</td>
+                    <td id="td8">74.50</td>
+                    <td id="td9">64.88</td>
+                    <td id="td10">75.27</td>
+                    <td id="td11">54.66</td>
+                </tr>
+                <tr id="r4">
+                    <td id="td12">3</td>
+                    <td id="td13">64.6</td>
+                    <td id="td14">55.96</td>
+                    <td id="td15">45.1</td>
+                    <td id="td16">78.64</td>
+                    <td id="td17">12.85</td>
+                </tr>
+                <tr id="r5">
+                    <td id="td18">9</td>
+                    <td id="td19">74.34</td>
+                    <td id="td20">16.49</td>
+                    <td id="td21">98.24</td>
+                    <td id="td22">131.45</td>
+                    <td id="td23">53.53</td>
+                </tr>
+                <tr id="r6">
+                    <td id="td24">12</td>
+                    <td id="td25">99.99</td>
+                    <td id="td26">100.55</td>
+                    <td id="td27">102.94</td>
+                    <td id="td28">110.14</td>
+                    <td id="td29">77.77</td>
+                </tr>
+                <tr id="r7">
+                    <td id="td30">15</td>
+                    <td id="td31">72.55</td>
+                    <td id="td32">65.72</td>
+                    <td id="td33">66.03</td>
+                    <td id="td34">88.39</td>
+                    <td id="td35">124.64</td>
+                </tr>
+                <tr id="r8">
+                    <td id="td36">18</td>
+                    <td id="td37">45.75</td>
+                    <td id="td38">98.36</td>
+                    <td id="td39">78.22</td>
+                    <td id="td40">145.24</td>
+                    <td id="td41">99.99</td>
+                </tr>
+            </table>
+        </center>
+    </div>
+        <br>
+        <br>
+        <center>
+            <!-- Table-02 -->
+<h2>
+    <u style="color: red;">Table-02</u>
+</h2>
+<h2><u>Team Work</u></h2>
+<div>
+    <table id="t2">
+        <tr id="tr1">
+            <th id="thh1">Team Name</th>
+            <th id="thh2">Rank Post</th>
+            <th id="thh3">WK1</th>
+            <th id="thh4">WK2</th>
+            <th id="thh5">WK3</th>
+            <th id="thh6">WK4</th>
+            <th id="thh7">WK5</th>
+            <th id="thh8">Pld</th>
+            <th id="thh9">Wins</th>
+            <th id="thh10">Avg. Sc</th>
+            <th id="thh11">Total</th>
+        </tr>
+        <tr id="tr2">
+            <td id="td42">Protap Ltd.</td>
+            <td id="td43">1</td>
+            <td id="td44">39</td>
+            <td id="td45">44</td>
+            <td id="td46">44</td>
+            <td id="td47">44</td>
+            <td id="td48">99</td>
+            <td id="td49">5</td>
+            <td id="td50">4</td>
+            <td id="td51">54.0</td>
+            <td id="td52">270</td>
+        </tr>
+        <tr id="tr3">
+            <td id="td53">Chayon Ltd.</td>
+            <td id="td54">2</td>
+            <td id="td55">70</td>
+            <td id="td56">25</td>
+            <td id="td57">25</td>
+            <td id="td58">25</td>
+            <td id="td59">25</td>
+            <td id="td60">5</td>
+            <td id="td61">1</td>
+            <td id="td62">34.0</td>
+            <td id="td63">170</td>
+        </tr>
+        <tr id="tr4">
+            <td id="td64">Sohag Ltd.</td>
+            <td id="td65">3</td>
+            <td id="td66">66</td>
+            <td id="td67">25</td>
+            <td id="td68">25</td>
+            <td id="td69">25</td>
+            <td id="td70">25</td>
+            <td id="td71">5</td>
+            <td id="td72">0</td>
+            <td id="td73">33.2</td>
+            <td id="td74">166</td>
+        </tr>
+        <tr id="tr5">
+            <td id="td75">Sagor Ltd.</td>
+            <td id="td76">4</td>
+            <td id="td77">65</td>
+            <td id="td78">25</td>
+            <td id="td79">25</td>
+            <td id="td80">25</td>
+            <td id="td81">25</td>
+            <td id="td82">5</td>
+            <td id="td83">0</td>
+            <td id="td84">33.0</td>
+            <td id="td85">165</td>
+        </tr>
+        <tr id="tr6">
+            <td id="td86">Ratul Ltd.</td>
+            <td id="td87">5</td>
+            <td id="td88">27</td>
+            <td id="td89">35</td>
+            <td id="td90">25</td>
+            <td id="td91">25</td>
+            <td id="td92">25</td>
+            <td id="td93">5</td>
+            <td id="td94">0</td>
+            <td id="td95">27.4</td>
+            <td id="td96">137</td>
+        </tr>
+        <tr id="tr7">
+            <td id="td97">Akash Ltd.</td>
+            <td id="td98">6</td>
+            <td id="td99">25</td>
+            <td id="td100">25</td>
+            <td id="td101">26</td>
+            <td id="td102">25</td>
+            <td id="td103">25</td>
+            <td id="td104">5</td>
+            <td id="td105">0</td>
+            <td id="td106">25.2</td>
+            <td id="td107">126</td>
+        </tr>
+        <tr id="tr8">
+            <td id="td108">Bikash Ltd.</td>
+            <td id="td109">7</td>
+            <td id="td110">25</td>
+            <td id="td111">25</td>
+            <td id="td112">25</td>
+            <td id="td113">25</td>
+            <td id="td114">25</td>
+            <td id="td115">5</td>
+            <td id="td116">0</td>
+            <td id="td117">25.0</td>
+            <td id="td118">125</td>
+        </tr>
+        <tr id="tr9">
+            <td id="td119">Niloy Ltd.</td>
+            <td id="td120">8</td>
+            <td id="td121">25</td>
+            <td id="td122">25</td>
+            <td id="td123">25</td>
+            <td id="td124">25</td>
+            <td id="td125">25</td>
+            <td id="td126">5</td>
+            <td id="td127">0</td>
+            <td id="td128">25.0</td>
+            <td id="td129">125</td>
+        </tr>
+        <tr id="tr10">
+            <td id="td130">Sadhon Ltd.</td>
+            <td id="td131">9</td>
+            <td id="td132">45</td>
+            <td id="td133"></td>
+            <td id="td134">25</td>
+            <td id="td135">25</td>
+            <td id="td136">25</td>
+            <td id="td137">4</td>
+            <td id="td138">0</td>
+            <td id="td139">30.0</td>
+            <td id="td140">120</td>
+        </tr>
+        <tr id="tr11">
+            <td id="td141">Shuvo Ltd.</td>
+            <td id="td142">10</td>
+            <td id="td143">25</td>
+            <td id="td144">25</td>
+            <td id="td145">15</td>
+            <td id="td146">25</td>
+            <td id="td147">25</td>
+            <td id="td148">5</td>
+            <td id="td149">0</td>
+            <td id="td150">23.0</td>
+            <td id="td151">115</td>
+        </tr>
+        <tr id="tr12">
+            <td id="td152">Nayan Ltd.</td>
+            <td id="td153">11</td>
+            <td id="td154"></td>
+            <td id="td155"></td>
+            <td id="td156">26</td>
+            <td id="td157">25</td>
+            <td id="td158">55</td>
+            <td id="td159">3</td>
+            <td id="td160">0</td>
+            <td id="td161">35.3</td>
+            <td id="td162">106</td>
+        </tr>
+        <tr id="tr13">
+            <td id="td163">Shayon Ltd.</td>
+            <td id="td164">12</td>
+            <td id="td165">25</td>
+            <td id="td166">25</td>
+            <td id="td167">25</td>
+            <td id="td168"></td>
+            <td id="td169">25</td>
+            <td id="td170">4</td>
+            <td id="td171">0</td>
+            <td id="td172">25.0</td>
+            <td id="td173">100</td>
+        </tr>
+        <tr id="tr14">
+            <td id="td174">Megha Ltd.</td>
+            <td id="td175">13</td>
+            <td id="td176"></td>
+            <td id="td177">25</td>
+            <td id="td178">25</td>
+            <td id="td179">25</td>
+            <td id="td180">25</td>
+            <td id="td181">4</td>
+            <td id="td182">0</td>
+            <td id="td183">25.0</td>
+            <td id="td184">100</td>
+        </tr>
+        <tr id="tr15">
+            <td id="td185">Arthi Ltd.</td>
+            <td id="td186">14</td>
+            <td id="td187">25</td>
+            <td id="td188">25</td>
+            <td id="td189">25</td>
+            <td id="td190">25</td>
+            <td id="td191"></td>
+            <td id="td192">4</td>
+            <td id="td193">0</td>
+            <td id="td194">25.0</td>
+            <td id="td195">100</td>
+        </tr>
+        <tr id="tr16">
+            <td id="td196">Mofiz Ltd.</td>
+            <td id="td197">15</td>
+            <td id="td198"></td>
+            <td id="td199">25</td>
+            <td id="td200">26</td>
+            <td id="td201">25</td>
+            <td id="td202"></td>
+            <td id="td203">3</td>
+            <td id="td204">0</td>
+            <td id="td205">25.3</td>
+            <td id="td206">76</td>
+        </tr>
+    </table>
+</center>
+<br>
+<br>
+<!-- Table-03 -->
+<div>
+    <center>
+    <h2 style="color: red;"><u>Table-03</u></h2>
+    <h2><u>Personal info</u>:</h2>
+    <table style="border: 2px solid; border-collapse: collapse;">
+        <tr id="row1">
+            <th id="he1">Profile</th>
+            <th id="he2">Name</th>
+            <th id="he3">Roll</th>
+            <th id="he4">Institute</th>
+            <th id="he5">Email</th>
+        </tr>
+        <tr id="row2">
+            <td id="td207"><img src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001882.png" alt="Pic1" width="100" height="80"></td>
+            <td id="td208">Protap</td>
+            <td id="td209">01</td>
+            <td id="td210">95icon</td>
+            <td id="td211" style="background-color: red;">protapdutta500@gmail.com</td>
+        </tr>
+        <tr id="row3">
+            <td id="td212"><img src="https://st2.depositphotos.com/2703645/7303/v/450/depositphotos_73039841-stock-illustration-male-avatar-icon.jpg" alt="pic2" width="100" height="80"></td>
+            <td id="td213">Sujon</td>
+            <td id="td214">02</td>
+            <td id="td215">95icon</td>
+            <td id="td216" style="background-color: red;">sujonmr.123.@gmail.com</td>
+        </tr>
+        <tr id="row4">
+            <td id="td217"><img src="https://i.pinimg.com/736x/39/f2/40/39f240a04441d36e63432f10f21ff951.jpg" alt="pic3" width="100" height="80"></td>
+            <td id="td218">Rifat</td>
+            <td id="td219">03</td>
+            <td id="td220">95icon</td>
+            <td id="td221" style="background-color: red;">raja76.bd.@gmail.com</td>
+        </tr>
+        <tr id="row5">
+            <td id="td222"><img src="https://c8.alamy.com/comp/TC667N/young-man-avatar-cartoon-character-profile-picture-TC667N.jpg" alt="pic4" width="100" height="80"></td>
+            <td id="td223">Rajon</td>
+            <td id="td224">04</td>
+            <td id="td225">95icon</td>
+            <td id="td226" style="background-color: red;">rajondas232@gmail.com</td>
+        </tr>
+    </table>
+</center>
+</div>
+</div>
+<br>
+<br>
+<!-- Table-04 -->
+<div>
+    <center>
+<h2 style="color: red;"><u>Table-04</u></h2>
+<h2><u>Cricket Team Member</u></h2>
+<table style="background-color: chartreuse;" id="tt1">
+    <tr id="trr1">
+        <th id="hh1">Team Member</th>
+        <th id="hh2">Run</th>
+        <th id="hh3">wicket</th>
+    </tr>
+    <tr id="trr2">
+        <td id="c1">Protap</td>
+        <td id="c2">140</td>
+        <td id="c3">out</td>
+    </tr>
+    <tr id="trr3">
+        <td id="c4">Abir</td>
+        <td id="c5">78</td>
+        <td id="c6">not-out</td>
+    </tr>
+    <tr id="trr4">
+        <td id="c7">Akash</td>
+        <td id="c8">45</td>
+        <td id="c9">out</td>
+    </tr>
+</table>
+</center>
+</div>
+<br>
+<br>
+<!-- Table-05 -->
+ <div>
+    <center>
+    <h2 style="color: red;"><u>Table-05</u></h2>
+    <h2><u>Sales</u></h2>
+    <table id="tab1">
+        <tr id="ro1">
+            <th id="hed1">Sales Rep</th>
+            <th id="hed2">Product</th>
+            <th id="hed3">Units Sold</th>
+            <th id="hed4">Edit<i class="fa-solid fa-pen"></i></th>
+        </tr>
+        <tr id="ro2">
+            <td id="data1">Alice</td>
+            <td id="data2">Product A</td>
+            <td id="data3">10</td>
+            <td id="da1"><button><i class="fa-solid fa-pen"></i></button></td>
+        </tr>
+        <tr id="ro3">
+            <td id="data4">Bob</td>
+            <td id="data5">Product B</td>
+            <td id="data6">15</td>
+            <td id="da2"><button><i class="fa-solid fa-pen"></i></button></td>
+        </tr>
+        <tr id="ro4">
+            <td id="data7">Charlie</td>
+            <td id="data8">Product C</td>
+            <td id="data9">12</td>
+            <td id="da3"><button><i class="fa-solid fa-pen"></i></button></td>
+        </tr>
+        <tr id="ro5">
+            <td id="data10">Bob</td>
+            <td id="data11">Product C</td>
+            <td id="data12">5</td>
+            <td id="da4"><button><i class="fa-solid fa-pen"></i></button></td>
+        </tr>
+        <tr id="ro6">
+            <td id="data13">Alice</td>
+            <td id="data14">Product A</td>
+            <td id="data15">14</td>
+            <td id="da5"><button><i class="fa-solid fa-pen"></i></button></td>
+        </tr>
+    </table>
+ </div>
+</center>
+        </section>
+     </main>
+</body>
+</html>
